@@ -1,0 +1,37 @@
+<div class="container">
+  <h2 class="mainTitle">Note Pad Application</h2>
+  <div class="mainForm">
+
+    <div class="notepadTitle">
+      <input id="titlenote" name="notepadtitle" placeholder="My notepad title..." >
+      <div class="savedelbtn">
+        <button class="btn-primary" type="button" name="button">Save</button>
+        <button class="btn-delete" type="button" name="button">Delete</button></div>
+      </div>
+    </div>
+
+    <div>
+      <label id="addnotetitle">My Notes</label>
+      <div class="notepadTitle">
+        <div><input type="text" name="notepadtitle" placeholder="Enter note title..." ></div>
+        <div><textarea class="notedesc" name="name" rows="4" cols="70" placeholder="Enter note..."></textarea></div>
+      </div>
+      <div id="addbtndiv">
+        <button class="btn-add" type="button" name="button">Add</button>
+      </div>
+    </div>
+
+    <div *ngFor="let note of notes">
+      <div class="notepadTitle">
+        <div>
+          {{note.files.forks_url}}
+          <input type="text" name="notepadtitle" placeholder="Sample note 1 title" value={{note.files.forks_url}} >
+          <span id="addbtndiv">
+            <button class="btn-delete" type="button" name="button">Delete</button>
+          </span>
+        </div>
+        <div><textarea class="notedesc" name="name" rows="4" cols="70" placeholder="Enter note...">{{note.description}}</textarea></div>
+      </div>
+    </div>
+
+  </div>
