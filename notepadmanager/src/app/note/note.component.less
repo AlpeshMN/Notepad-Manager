@@ -1,19 +1,24 @@
+@font-family: Arial;
+@padding: 5px;
+
 .mainTitle{
-  font-family: Arial;
+  font-family: @font-family;
   font-size: 24px;
+  margin-left: 40px;
 }
 
 #notepadtitle{
-  font-family: Arial;
+  font-family: @font-family;
   font-size: 12px;
 }
+
 #notepadtitlediv{
   margin: 20px 0px -20px 20px;
 }
 
 #titlenote{
   margin: 20px 20px;
-  padding: 5px;
+  padding: @padding;
   border: 1px solid lightgrey;
   border-radius: 3px;
   width: 250px;
@@ -22,7 +27,7 @@
 .savedelbtn{
   float: right;
   margin: 5px;
-  padding: 5px;
+  padding: @padding;
 }
 
 #addnotetitle{
@@ -39,7 +44,6 @@
 }
 
 .notedesc{
-  // margin: 20px 20px;
   margin: 20px 0px 5px 20px;
   padding: 5px;
   border: 1px solid lightgrey;
@@ -49,6 +53,7 @@
   height: 7em;
   resize: vertical;
   max-height: 15em;
+  min-height: 5em;
 }
 
 ::placeholder {
