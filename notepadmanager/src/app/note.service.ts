@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json','Authorization': '88f3af7bb6ebb57c72d104330c75bbcbcf102dc8' })
+  headers: new HttpHeaders({ 'Content-Type': 'application/json','Authorization': 'token 88f3af7bb6ebb57c72d104330c75bbcbcf102dc8' })
 };
 
 @Injectable({
